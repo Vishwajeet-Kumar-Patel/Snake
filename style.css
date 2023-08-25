@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poltawski+Nowy:ital@1&family=Poppins&family=Roboto+Mono:wght@500&family=Ubuntu+Condensed&family=Ubuntu:ital,wght@0,400;1,300;1,400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+ 
+.body{
+    background: url("bg.webp");
+    background-color: aliceblue;
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 25px;
+    right: 200px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Poltawski Nowy', serif;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 60px;
+    right: 140px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Poltawski Nowy', serif;
+}
+
+#board{
+    background: linear-gradient(rgb(214, 234, 176), rgb(179, 240, 162));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head{
+    background: linear-gradient(red, yellow);
+    border: 2px solid purple;
+    transform: scale(1.02);
+    border-radius: 15px;
+}
+
+.snake{
+    background-color: purple;
+    border: 0.25vmin solid white;
+    border-radius: 25px;
+}
+
+.food{
+    background: linear-gradient(red, purple);
+    border: 0.25vmin solid black;
+    border-radius: 20px;
+}
